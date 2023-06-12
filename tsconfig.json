@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "module": "es6",
+    "moduleResolution": "node",
+    "target": "es5",
+    "allowJs": true,
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "components/*": ["src/components/*"],
+      "constants": ["src/constants"],
+      "containers/*": ["src/containers/*"],
+      "layouts": ["src/layouts"],
+      "pages/*": ["src/pages/*"],
+      "services/*": ["src/services/*"]
+    },
+    "typeRoots": ["node_modules/@types", "src/types"]
+  },
+  "include": ["src", "index.d.ts"]
+}
